@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es-en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/Contacto.css">
+    <link rel="icon" href="Imagenes/logoSinFondo.png">
+
+</head>
+
+<body>
+    <header>
+        <div class="video">
+            <video src="Imagenes/ofertas/videoCaminataPinos.mp4" loop autoplay muted>
+            </video>
+        </div>
+        <div class="interior">
+            <img src="Imagenes/logoSinFondo.png" alt="logo">
+            <div class="nombre">
+                <h1>Contacto</h1>
+                <h5>"Descubre la belleza de Antioquia"</h5>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <button id="inicio" class="boton"><a href="RutasPaisas.html"><strong>Inicio</strong></a></button>
+        <button id="subMenu" class="boton"><strong>Destinos</strong>
+            <ul>
+                <li><a href="Sancarlos.html"><strong>San Carlos</strong></a></li>
+                <li><a href="rioClaro.html"><strong>Rio Claro</strong></a></li>
+                <li><a href="danta.html"><strong>La Danta</strong></a></li>
+                <li><a href="Guatapé.html"> <strong>Guatapé</strong> </a></li>
+                <li><a href="Jericó.html"> <strong>Jericó</strong> </a></li>
+                <li><a href="Jardín.html"><strong> Jardín</strong> </a></li>
+                <li><a href="Granada.html"> <strong>Granada</strong> </a></li>
+                <li><a href="Arboletes.html"><strong>Arboletes</strong></a></li>
+                <li><a href="Santa fe de Antioquia.html"><strong>Santa fe de Antioquia</strong></a></li>
+                <li><a href="Cocorna.html"><strong>Cocorna</strong></a></li>
+                <li><a href="San Luis.html"> <strong>San Luís</strong></a></li>
+                <li><a href="San Rafael.html"> <strong>San Rafael</strong> </a></li>
+            </ul>
+        </button>
+
+        <button id="ofertas" class="boton"><a href="Ofertas.html"><strong>Ofertas</strong></a></button>
+        <button id="quienesSomos" class="boton"><a href="QuienesSomos.html"><strong>Nosotros</strong></a></button>
+        <button id="contactos" class="boton"><a href="Contacto.html"><strong>Contacto</strong></a></button>
+
+    </nav>
+
+
+    <div class="formulario">
+        <form action="/crear/usuarios" method="post" class="formulario_interior">
+            <h2>Dejanos tu informacion</h2>
+            <div class="centrar">
+                <div class="container">
+                    <div class="columncolumn1">
+                        <input class="nombre_contacto padding" type="text" id="firstname" name="Nombre"
+                            placeholder="Nombre Completo" required>
+                        <hr>
+                        <input class="fecha_nacimiento padding" type="date" id="fecha_nacimiento" name="fechaNacimiento"
+                            placeholder="Fecha de Nacimiento" required>
+                        <hr>
+                        <select class="padding" name="tipo_documento" id="tipo_documento">
+                            <option value="tipo de documento" hidden selected>Tipo de documento</option>
+                            <option value="cedula_ciudadania">Cédula de ciudadanía</option>
+                            <option value="cedula_extranjeria"> cédula de extranjería</option>
+                            <option value="nit">NIT</option>
+                            <option value="pasaporte">Pasaporte</option>
+                        </select>
+                        <hr>
+                        <input class=" padding numero" type="number" id="documento" name="documento"
+                            placeholder="Numero de documento" required>
+                        <hr>
+                        <input class="padding" type="number" name="celular" id="celular" placeholder="Numero de celular"
+                            required>
+                        <hr>
+                        <input class="padding" type="email" name="email" id="email" placeholder="Correo Electronico"
+                            required>
+                        <hr>
+                        <input class="padding numero" type="number " name="personas" id="personas"
+                            placeholder="Numero de personas" required>
+                        <hr>
+                        <select class="padding" name="Menores_edad" id="">
+                            <option value="Elija la Opcion" hidden selected>Menores de edad</option>
+                            <option value="si">si</option>
+                            <option value="no">no</option>
+                        </select>
+                        <hr>
+                        <select name="viaje_seleccionado" id="viaje_seleccionado" class="viaje_seleccionado padding">
+                            <option value="destino" hidden selected>Destino</option>
+                            <option value="san_carlos">San Carlos</option>
+                            <option value="pueblito_paisa">Pueblito Paisa</option>
+                            <option value="parque_arvi">Parque Arví</option>
+                            <option value="jerico">Jericó</option>
+                            <option value="guatape">Guatapé</option>
+                            <option value="jardin">Jardín</option>
+                            <option value="granada">Granada</option>
+                            <option value="parque_explora">Parque Explora</option>
+                            <option value="santa_fe_antioquia">Santa fe de Antioquia</option>
+                            <option value="cocorna">Cocorna</option>
+                            <option value="san_luis">San Luis</option>
+                            <option value="san_rafael">San Rafael</option>
+                        </select>
+                        <hr>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+
+
+
+</body>
+
+</html>
